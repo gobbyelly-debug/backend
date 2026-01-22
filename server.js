@@ -11,7 +11,8 @@ const serviceAccount = require('./firebase-service-account.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  projectId: process.env.FIREBASE_PROJECT_ID || serviceAccount.project_id
+  projectId: process.env.FIREBASE_PROJECT_ID || serviceAccount.project_id,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET || `${serviceAccount.project_id}.appspot.com`
 });
 
 const app = express();
@@ -35,6 +36,7 @@ app.use('/api/', limiter);
 app.use('/api/notifications', require('./routes/notifications'));
 app.use('/api/tokens', require('./routes/tokens'));
 app.use('/api/access-keys', require('./routes/access_keys'));
+app.use('/api/videos', require('./routes/videos'));
 
 // Health check
 app.get('/health', (req, res) => {
