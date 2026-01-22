@@ -1,0 +1,42 @@
+{
+  "15WCE1": {
+    "key": "15WCE1",
+    "plan": "week",
+    "planCode": "W",
+    "expiration": "2026-01-29T12:14:41.235Z",
+    "createdAt": "2026-01-22T12:14:41.236Z",
+    "used": false,
+    "usedAt": null,
+    "usedBy": null
+  },
+  "15MWLP": {
+    "key": "15MWLP",
+    "plan": "month",
+    "planCode": "M",
+    "expiration": "2026-02-21T12:14:53.316Z",
+    "createdAt": "2026-01-22T12:14:53.318Z",
+    "used": false,
+    "usedAt": null,
+    "usedBy": null
+  },
+  "15W06A": {
+    "key": "15W06A",
+    "plan": "week",
+    "planCode": "W",
+    "expiration": "2026-01-29T12:29:09.321Z",
+    "createdAt": "2026-01-22T12:29:09.322Z",
+    "used": false,
+    "usedAt": null,
+    "usedBy": null
+  },
+  "15WFKM": {
+    "key": "15WFKM",
+    "plan": "week",
+    "planCode": "W",
+    "expiration": "2026-01-29T12:32:48.048Z",
+    "createdAt": "2026-01-22T12:32:48.050Z",
+    "used": true,
+    "usedAt": "2026-01-22T12:33:43.035Z",
+    "usedBy": "anonymous"
+  }
+}

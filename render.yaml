@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mines-predictor-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FIREBASE_PROJECT_ID
+        value: mines-predictor-edf74
